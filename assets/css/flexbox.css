@@ -1,0 +1,79 @@
+.container {
+  max-width: 80%;
+  margin-inline: auto;
+  border: 2px solid black;
+
+  display: flex;
+}
+
+h2 {
+  text-align: center;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.coral {
+  background-color: coral;
+}
+
+.aqua {
+  background-color: aqua;
+}
+
+.crimson {
+  background-color: crimson;
+}
+
+.section-1 .box {
+  width: unset;
+  height: unset;
+}
+
+.section-2 {
+  flex-direction: row-reverse;
+}
+
+.section-3 {
+  flex-direction: column;
+  min-height: 40vh;
+}
+
+.section-4 {
+  flex-direction: column-reverse;
+  min-height: 40vh;
+}
+
+.section-5 {
+  flex-wrap: wrap;
+  /* align-content: flex-start; */
+  align-content: center;
+  min-height: 60vh;
+}
+
+.section-6 {
+  justify-content: space-between;
+}
+
+.section-7 {
+  min-height: 70vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.section-8 {
+  padding-block: 4rem;
+  align-items: baseline;
+}
+
+.section-8 .box {
+  height: unset;
+  width: 25%;
+}
+
+.section-10 .box {
+  flex-grow: 1;
+}

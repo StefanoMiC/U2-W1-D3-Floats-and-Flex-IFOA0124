@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resets.css">
+    <link rel="stylesheet" href="./flexbox.css">
+    <title>Flexbox</title>
+</head>
+
+<body>
+
+    <h4>FLEX CONTAINER PROPERTIES</h4>
+
+    <h2>Flex container: left to right</h2>
+    <div class="section-1 container">
+        <div class="box coral">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis maxime et iste amet
+            expedita earum consequatur ea inventore quasi, ex provident sunt autem necessitatibus placeat
+            exercitationem, iure dolorem sit officia?</div>
+        <div class="box aqua">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis maxime et iste amet
+            expedita earum consequatur ea inventore quasi, ex provident sunt autem necessitatibus placeat
+            exercitationem, iure dolorem sit officia?</div>
+        <div class="box crimson">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis maxime et iste amet
+            expedita earum consequatur ea inventore quasi, ex provident sunt autem necessitatibus placeat
+            exercitationem, iure dolorem sit officia?</div>
+    </div>
+
+    <h2>Flex container: right to left </h2>
+    <div class="section-2 container">
+        <div class="box coral">1</div>
+        <div class="box aqua">2</div>
+        <div class="box crimson">3</div>
+    </div>
+
+    <h2>Flex container: column </h2>
+    <div class="section-3 container">
+        <div class="box coral">1</div>
+        <div class="box aqua">2</div>
+        <div class="box crimson">3</div>
+    </div>
+
+    <h2>Flex container: column reverse </h2>
+    <div class="section-4 container">
+        <div class="box coral">1</div>
+        <div class="box aqua">2</div>
+        <div class="box crimson">3</div>
+    </div>
+
+
+    <h2>Flex container: con flex-wrap</h2>
+    <div class="section-5 container">
+        <div class="box coral">1</div>
+        <div class="box aqua">2</div>
+        <div class="box crimson">3</div>
+        <div class="box coral">4</div>
+        <div class="box crimson">5</div>
+        <div class="box aqua">6</div>
+    </div>
+
+
+    <h2>Justify-content: direzione row </h2>
+    <div class="section-6 container">
+        <div class="box coral">1</div>
+        <div class="box aqua">2</div>
+        <div class="box crimson">3</div>
+    </div>
+
+    <h2>Justify-content & align-items: direzione column </h2>
+    <div class="section-7 container">
+        <div class="box coral">1</div>
+        <div class="box aqua">2</div>
+        <div class="box crimson">3</div>
+    </div>
+
+    <h2>align-items: baseline </h2>
+    <div class="section-8 container">
+        <div class="box coral">
+            <img src="./assets/imgs/Adidas_2022_logo.svg" alt="" width="100%">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quo, ullam pariatur cum
+            labore possimus?
+        </div>
+        <div class="box aqua">
+            <img src="./assets/imgs/nike.jpg" alt="" width="100%">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, fugiat!
+        </div>
+        <div class="box crimson">
+            <img src="./assets/imgs/Puma-Logo.png" alt="" width="100%">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dignissimos quisquam eaque
+            saepe aut neque qui suscipit deleniti sequi consequuntur.
+        </div>
+        <div class="box coral">
+            <img src="./assets/imgs/logo-timberland-oggi.png" alt="" width="100%">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quo, ullam pariatur cum
+            labore possimus?
+        </div>
+    </div>
+
+    <hr>
+
+    <h4>FLEX ITEMS PROPERTIES</h4>
+    <h2>Proprietà order </h2>
+    <div class="section-9 container">
+        <div class="box coral">1</div>
+        <div class="box aqua">2</div>
+        <div class="box crimson" style="order: -1">first</div>
+        <div class="box coral" style="order: 1">second-to-last</div>
+        <div class="box aqua" style="order: 2">last</div>
+    </div>
+
+    <h2 style="margin-top: 6rem">Proprietà flex-grow </h2>
+    <div class="section-10 container">
+        <div class="box coral" style="flex-grow: 10">1</div>
+        <div class="box aqua" style="width:200px;">2</div>
+        <div class="box crimson" style="flex-grow: 0; flex-shrink:0; border-radius: 50%;">3</div>
+
+    </div>
+
+    <!-- <h2>Proprietà flex-shrink </h2>
+    <div class="section-11 container">
+        <div class="box coral">1</div>
+        <div class="box aqua">2</div>
+        <div class="box crimson" style="order: -1">first</div>
+        <div class="box coral" style="order: 1">second-to-last</div>
+        <div class="box aqua" style="order: 2">last</div>
+    </div> -->
+
+</body>
+
+</html>

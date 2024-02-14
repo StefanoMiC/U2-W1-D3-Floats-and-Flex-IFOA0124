@@ -1,0 +1,146 @@
+header {
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+header nav {
+  margin-right: auto;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+main {
+  min-height: calc(100vh - 66px);
+  display: flex;
+}
+
+aside {
+  background-color: coral;
+  width: 200px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+aside ul li {
+  padding: 0.5rem;
+}
+
+aside img {
+  max-width: 100%;
+}
+
+aside button {
+  background-color: black;
+  color: white;
+  width: 100%;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0;
+  /* funziona grazie al flex di aside  */
+  margin-top: auto;
+}
+
+.main-content {
+  background-color: aqua;
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+section.grid {
+  display: flex;
+}
+
+.card {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 33.333%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid lightblue;
+  position: relative;
+
+  /* questo flex lo usiamo per ingrandire dinamiacamente .card-body*/
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card .img-wrapper {
+  position: relative;
+}
+
+.card .img-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* background-color: #0000006b; */
+  /* opacity: 0.2; */
+  background-image: linear-gradient(to top, #0000009c 0%, transparent 50%);
+}
+
+.card .img-wrapper h4 {
+  position: absolute;
+  margin: 0;
+  bottom: 10px;
+  left: 6px;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.card-body {
+  padding: 1rem;
+  background-color: white;
+
+  /* questo grow è possibile grazie al flex su .card */
+  flex-grow: 1;
+
+  /* diventa a sua volta un contenitore flex per poter allineare il bottone sul fondo */
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body button {
+  /* questo funziona grazie al flex di .card-body */
+  margin-top: auto;
+
+  margin-inline: auto;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card .badge {
+  background-color: crimson;
+  color: white;
+  padding: 0.25rem;
+  position: absolute;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  right: 0;
+  bottom: 0px;
+}
+
+button {
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}

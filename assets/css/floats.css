@@ -1,0 +1,77 @@
+ul li {
+  display: inline-block;
+}
+
+img {
+  float: left;
+  margin: 1rem;
+}
+
+p {
+  background-color: aqua;
+  margin-bottom: 0;
+}
+
+p:nth-of-type(2) {
+  clear: left;
+}
+
+.container {
+  max-width: 80%;
+  margin-inline: auto;
+  border: 2px solid black;
+  display: flow-root;
+}
+
+.container:nth-of-type(2) {
+  margin-top: 2rem;
+}
+
+header {
+  background-color: powderblue;
+  padding: 0.5rem 1rem;
+}
+
+header nav ul {
+  float: right;
+}
+
+header nav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* soluzione legacy */
+/* main::after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+
+/* soluzione moderna */
+main {
+  display: flow-root;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  padding: 0.5rem 1rem;
+}
+
+.box {
+  width: 33.333%;
+  height: 100px;
+  float: left;
+}
+
+.coral {
+  background-color: coral;
+}
+.aqua {
+  background-color: aqua;
+}
+.crimson {
+  background-color: crimson;
+}
